@@ -41,7 +41,15 @@ StartScene * StartScene::createDefault(void)
     
     rootNode->getMyListView()->setScrollBarEnabled(false);
     for (int i = 0; i < 10; ++i) {
-        rootNode->getMyListView()->pushBackCustomItem(Item::createDefault());
+        auto myItem = Item::createDefault();
+        
+        auto scaleFactor = rootNode->getMyListView()->getContentSize().width/myItem->getContentSize().width;
+        
+        myItem->setContentSize(myItem->getContentSize()*scaleFactor);
+        
+        ui::Helper::doLayout(myItem);
+        
+        rootNode->getMyListView()->pushBackCustomItem(myItem);
     }
     
     return (StartScene*)rootNode;

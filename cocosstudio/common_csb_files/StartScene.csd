@@ -6,7 +6,7 @@
       <ObjectData Name="Scene" CustomClassName="StartScene" ctype="GameNodeObjectData">
         <Size X="320.0000" Y="480.0000" />
         <Children>
-          <AbstractNodeData Name="MyListView" ActionTag="-1076318747" Tag="3" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="60.0000" RightMargin="60.0000" TopMargin="90.0000" BottomMargin="90.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" ScrollDirectionType="0" ItemMargin="5" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
+          <AbstractNodeData Name="MyListView" ActionTag="-1076318747" Tag="3" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="60.0000" RightMargin="60.0000" TopMargin="90.0000" BottomMargin="90.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" ScrollDirectionType="0" ItemMargin="15" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
             <Size X="200.0000" Y="300.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="160.0000" Y="240.0000" />
