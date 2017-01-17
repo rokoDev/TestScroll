@@ -61,8 +61,6 @@
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 		FF057B141E2D4708005E7A94 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF057B131E2D4708005E7A94 /* Launch Screen.storyboard */; };
-		FF057B181E2D473C005E7A94 /* RegisterCustomReaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF057B161E2D473C005E7A94 /* RegisterCustomReaders.cpp */; };
-		FF057B191E2D473C005E7A94 /* RegisterCustomReaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF057B161E2D473C005E7A94 /* RegisterCustomReaders.cpp */; };
 		FF057B241E2D474A005E7A94 /* StartScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF057B221E2D474A005E7A94 /* StartScene.cpp */; };
 		FF057B251E2D474A005E7A94 /* StartScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF057B221E2D474A005E7A94 /* StartScene.cpp */; };
 		FF057B291E2D4756005E7A94 /* Helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF057B271E2D4756005E7A94 /* Helper.cpp */; };
@@ -87,6 +85,10 @@
 		FF057B451E2D4AC1005E7A94 /* iPhoneHD in Resources */ = {isa = PBXBuildFile; fileRef = FF057B331E2D4AC1005E7A94 /* iPhoneHD */; };
 		FF057B4D1E2D513F005E7A94 /* Item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF057B4B1E2D513F005E7A94 /* Item.cpp */; };
 		FF057B4E1E2D513F005E7A94 /* Item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF057B4B1E2D513F005E7A94 /* Item.cpp */; };
+		FF47A9381E2E120200222B99 /* ItemReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF47A9361E2E120200222B99 /* ItemReader.cpp */; };
+		FF47A9391E2E120200222B99 /* ItemReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF47A9361E2E120200222B99 /* ItemReader.cpp */; };
+		FF47A9401E2E12EE00222B99 /* StartSceneReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF47A93E1E2E12EE00222B99 /* StartSceneReader.cpp */; };
+		FF47A9411E2E12EE00222B99 /* StartSceneReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF47A93E1E2E12EE00222B99 /* StartSceneReader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,8 +186,6 @@
 		ED545A7B1B68A1F400C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		FF057B131E2D4708005E7A94 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "ios/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
-		FF057B161E2D473C005E7A94 /* RegisterCustomReaders.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegisterCustomReaders.cpp; sourceTree = "<group>"; };
-		FF057B171E2D473C005E7A94 /* RegisterCustomReaders.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RegisterCustomReaders.hpp; sourceTree = "<group>"; };
 		FF057B1B1E2D474A005E7A94 /* BinMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinMacro.h; sourceTree = "<group>"; };
 		FF057B1C1E2D474A005E7A94 /* DECLARE_CS_WIDGET_CALLBACKS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DECLARE_CS_WIDGET_CALLBACKS.hpp; sourceTree = "<group>"; };
 		FF057B1D1E2D474A005E7A94 /* DEFINE_CS_WIDGET_CALLBACKS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DEFINE_CS_WIDGET_CALLBACKS.hpp; sourceTree = "<group>"; };
@@ -208,6 +208,10 @@
 		FF057B331E2D4AC1005E7A94 /* iPhoneHD */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iPhoneHD; sourceTree = "<group>"; };
 		FF057B4B1E2D513F005E7A94 /* Item.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Item.cpp; sourceTree = "<group>"; };
 		FF057B4C1E2D513F005E7A94 /* Item.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Item.hpp; sourceTree = "<group>"; };
+		FF47A9361E2E120200222B99 /* ItemReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemReader.cpp; sourceTree = "<group>"; };
+		FF47A9371E2E120200222B99 /* ItemReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemReader.h; sourceTree = "<group>"; };
+		FF47A93E1E2E12EE00222B99 /* StartSceneReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StartSceneReader.cpp; sourceTree = "<group>"; };
+		FF47A93F1E2E12EE00222B99 /* StartSceneReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartSceneReader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -415,8 +419,6 @@
 		FF057B151E2D473C005E7A94 /* RegisterCustomReaders */ = {
 			isa = PBXGroup;
 			children = (
-				FF057B161E2D473C005E7A94 /* RegisterCustomReaders.cpp */,
-				FF057B171E2D473C005E7A94 /* RegisterCustomReaders.hpp */,
 			);
 			path = RegisterCustomReaders;
 			sourceTree = "<group>";
@@ -437,6 +439,8 @@
 		FF057B211E2D474A005E7A94 /* StartScene */ = {
 			isa = PBXGroup;
 			children = (
+				FF47A93E1E2E12EE00222B99 /* StartSceneReader.cpp */,
+				FF47A93F1E2E12EE00222B99 /* StartSceneReader.h */,
 				FF057B221E2D474A005E7A94 /* StartScene.cpp */,
 				FF057B231E2D474A005E7A94 /* StartScene.hpp */,
 			);
@@ -446,6 +450,8 @@
 		FF057B4A1E2D5129005E7A94 /* Item */ = {
 			isa = PBXGroup;
 			children = (
+				FF47A9361E2E120200222B99 /* ItemReader.cpp */,
+				FF47A9371E2E120200222B99 /* ItemReader.h */,
 				FF057B4B1E2D513F005E7A94 /* Item.cpp */,
 				FF057B4C1E2D513F005E7A94 /* Item.hpp */,
 			);
@@ -622,8 +628,9 @@
 				FF057B291E2D4756005E7A94 /* Helper.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
-				FF057B181E2D473C005E7A94 /* RegisterCustomReaders.cpp in Sources */,
+				FF47A9401E2E12EE00222B99 /* StartSceneReader.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				FF47A9381E2E120200222B99 /* ItemReader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,8 +639,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF057B4E1E2D513F005E7A94 /* Item.cpp in Sources */,
-				FF057B191E2D473C005E7A94 /* RegisterCustomReaders.cpp in Sources */,
+				FF47A9391E2E120200222B99 /* ItemReader.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				FF47A9411E2E12EE00222B99 /* StartSceneReader.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				FF057B251E2D474A005E7A94 /* StartScene.cpp in Sources */,
 				FF057B2A1E2D4756005E7A94 /* Helper.cpp in Sources */,

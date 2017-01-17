@@ -6,7 +6,8 @@
 //
 //
 
-#include "RegisterCustomReaders.hpp"
+//#include "RegisterCustomReaders.hpp"
+#include "StartSceneReader.h"
 
 #include "Item.hpp"
 #include "StartScene.hpp"

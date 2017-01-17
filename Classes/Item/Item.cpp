@@ -8,7 +8,8 @@
 
 #include "Item.hpp"
 
-#include "RegisterCustomReaders.hpp"
+//#include "RegisterCustomReaders.hpp"
+#include "ItemReader.h"
 
 USING_NS_CC;
 
