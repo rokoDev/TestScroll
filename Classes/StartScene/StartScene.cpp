@@ -6,8 +6,8 @@
 //
 //
 
-//#include "RegisterCustomReaders.hpp"
-#include "StartSceneReader.h"
+#include "RegisterCustomReaders.hpp"
+//#include "StartSceneReader.h"
 
 #include "Item.hpp"
 #include "StartScene.hpp"
@@ -41,6 +41,8 @@ StartScene * StartScene::createDefault(void)
     ui::Helper::doLayout(rootNode);
     
     rootNode->getMyListView()->setScrollBarEnabled(false);
+    
+    std::stringstream buffer;
     for (int i = 0; i < 10; ++i) {
         auto myItem = Item::createDefault();
         
@@ -50,7 +52,13 @@ StartScene * StartScene::createDefault(void)
         
         ui::Helper::doLayout(myItem);
         
+        buffer << "Btn " << i+1;
+        myItem->getSuperButton()->setTitleText(buffer.str());
+        buffer.str(std::string());
+        buffer.clear();
+        
         rootNode->getMyListView()->pushBackCustomItem(myItem);
+        //rootNode->getMyListView()->insertCustomItem(myItem, 0);
     }
     
     return (StartScene*)rootNode;

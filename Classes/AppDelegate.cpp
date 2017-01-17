@@ -1,8 +1,8 @@
 #include "AppDelegate.h"
 #include "StartScene.hpp"
-//#include "RegisterCustomReaders.hpp"
-#include "StartSceneReader.h"
-#include "ItemReader.h"
+#include "RegisterCustomReaders.hpp"
+//#include "StartSceneReader.h"
+//#include "ItemReader.h"
 
 USING_NS_CC;
 
@@ -122,9 +122,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
     setupResolutionPolicy();
     
     //register reader' classes for cocostudio
-    //registerCustomReaders();
-    CSLoader::getInstance()->registReaderObject("StartSceneReader",(ObjectFactory::Instance)StartSceneReader::getInstance);
-    CSLoader::getInstance()->registReaderObject("ItemReader",(ObjectFactory::Instance)ItemReader::getInstance);
+    registerCustomReaders();
+    //CSLoader::getInstance()->registReaderObject("StartSceneReader",(ObjectFactory::Instance)StartSceneReader::getInstance);
+    //CSLoader::getInstance()->registReaderObject("ItemReader",(ObjectFactory::Instance)ItemReader::getInstance);
     
     
     // create scene
